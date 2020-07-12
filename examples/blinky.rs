@@ -7,13 +7,13 @@ use nb::block;
 #[allow(unused_imports)]
 use panic_semihosting;
 
-use adafruit_nrf52pro_bsc::hal::{
+use adafruit_nrf52_pro_bsc::hal::{
     gpio::{p0, Level},
     prelude::*,
     timer::{self, Timer},
 };
-use adafruit_nrf52pro_bsc::pac::Peripherals;
-use adafruit_nrf52pro_bsc::Pins;
+use adafruit_nrf52_pro_bsc::pac::Peripherals;
+use adafruit_nrf52_pro_bsc::Pins;
 
 #[entry]
 fn main() -> ! {
